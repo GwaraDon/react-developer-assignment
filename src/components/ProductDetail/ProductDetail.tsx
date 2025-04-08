@@ -62,12 +62,16 @@ const ProductDetail: React.FC = () => {
                     />
                     <div className="grid grid-cols-4 gap-2">
                         {product.images.map((image, index) => (
-                            <img
+                            <div
                                 key={`${product.id}-image-${index}`}
-                                src={image}
-                                alt={`${product.title} - ${index + 1}`}
-                                className="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition-opacity"
-                            />
+                                className="relative"
+                            >
+                                <img
+                                    src={image}
+                                    alt={`${product.title} - ${index + 1}`}
+                                    className="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition-opacity"
+                                />
+                            </div>
                         ))}
                     </div>
                 </div>
