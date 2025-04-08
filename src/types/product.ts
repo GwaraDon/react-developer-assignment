@@ -13,6 +13,7 @@ export interface Product {
     availabilityStatus: string;
     minimumOrderQuantity: number;
     reviews: Review[];
+    image: string;
 }
 
 export interface Review {
