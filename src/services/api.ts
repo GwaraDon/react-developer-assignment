@@ -3,9 +3,10 @@ import { Product, ProductsResponse } from "@/types/product";
 const BASE_URL = "https://dummyjson.com";
 
 export const fetchProducts = async (
-    skip: number = 0,
-    limit: number = 10
+    page: number = 1,
+    limit: number = 12
 ): Promise<ProductsResponse> => {
+    const skip = (page - 1) * limit;
     const response = await fetch(
         `${BASE_URL}/products?skip=${skip}&limit=${limit}`
     );
