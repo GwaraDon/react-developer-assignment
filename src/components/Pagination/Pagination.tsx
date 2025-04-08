@@ -60,7 +60,7 @@ export default function PaginationComponent({
     const pageNumbers = getPageNumbers();
 
     return (
-        <Pagination className="my-8">
+        <Pagination className="w-auto mx-none">
             <PaginationContent>
                 <PaginationItem>
                     <PaginationPrevious

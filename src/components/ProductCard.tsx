@@ -16,9 +16,9 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <Image
                     src={product.thumbnail}
                     alt={product.title}
-                    width={256}
-                    height={256}
-                    className="object-cover"
+                    width={192} // Match h-48 (12rem = 192px at default Tailwind scale)
+                    height={192}
+                    className="object-cover w-full h-48"
                 />
             </div>
             <div className="p-4 space-y-2">

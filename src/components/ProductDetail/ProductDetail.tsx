@@ -15,7 +15,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         <div className="max-w-6xl mx-auto p-5">
             <Link
                 href="/"
-                className="mb-6 px-6 py-2 bg-primary text-white rounded hover:bg-primary/80 transition-colors flex items-center gap-2 inline-block"
+                className="mb-6 px-6 py-2 bg-blue-500 text-white rounded hover:bg-bg-blue-600 transition-colors flex items-center gap-2 inline-block"
             >
                 ← Back to Products
             </Link>
